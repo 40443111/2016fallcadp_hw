@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./</loc>
-<lastmod>2016-12-29T15:18:11-00:00</lastmod>
+<lastmod>2016-12-29T15:39:10-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./archives.html</loc>
-<lastmod>2016-12-29T15:18:11-00:00</lastmod>
+<lastmod>2016-12-29T15:39:10-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tags.html</loc>
-<lastmod>2016-12-29T15:18:11-00:00</lastmod>
+<lastmod>2016-12-29T15:39:10-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./categories.html</loc>
-<lastmod>2016-12-29T15:18:11-00:00</lastmod>
+<lastmod>2016-12-29T15:39:10-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -67,13 +67,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>./1117.html</loc>
-<lastmod>2016-11-17T12:00:00+08:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>./2016-11-17di-shi-zhou.html</loc>
 <lastmod>2016-11-17T12:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
@@ -98,13 +91,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <loc>./40443111-qi-zhong-qian-ke-cheng-zong-zheng-li.html</loc>
 <lastmod>2016-11-03T03:23:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>./category/hw.html</loc>
-<lastmod>2016-11-17T12:00:00+08:06</lastmod>
-<changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
@@ -165,29 +151,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>./tag/week1.html</loc>
-<lastmod>2016-11-04T20:10:00+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>./tag/week2.html</loc>
-<lastmod>2016-11-05T08:00:00+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>./tag/week11.html</loc>
-<lastmod>2016-11-24T00:00:00+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>./tag/week15.html</loc>
 <lastmod>2016-12-22T00:00:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>./tag/week1.html</loc>
+<lastmod>2016-11-04T20:10:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -200,13 +172,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>./tag/week14.html</loc>
-<lastmod>2016-12-15T00:00:00+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>./tag/week12.html</loc>
 <lastmod>2016-12-01T00:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
@@ -214,8 +179,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>./tag/daily.html</loc>
-<lastmod>2016-11-17T12:00:00+08:06</lastmod>
+<loc>./tag/week2.html</loc>
+<lastmod>2016-11-05T08:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -223,6 +188,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>./tag/week10.html</loc>
 <lastmod>2016-11-17T12:00:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>./tag/week14.html</loc>
+<lastmod>2016-12-15T00:00:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>./tag/week11.html</loc>
+<lastmod>2016-11-24T00:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
