@@ -20,7 +20,7 @@
 </v>
 <v t="amd.20151215180106.1" a="E"><vh>設定與開發</vh>
 <v t="amd.20151216151325.1" a="E"><vh>@clean index.html</vh>
-<v t="amd.20161004083800.1" a="E"><vh>html</vh>
+<v t="amd.20161004083800.1"><vh>html</vh>
 <v t="amd.20161004083800.2"><vh>head</vh></v>
 <v t="amd.20161004083800.5" a="E"><vh>body</vh>
 <v t="amd.20161004083800.6" a="E"><vh>reveal div</vh>
