@@ -1,5 +1,585 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2016Fall CPA 課程網誌 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2016-12-22T00:00:00+08:00</updated><entry><title>2016.12.22第十五週</title><link href="./20161222di-shi-wu-zhou.html" rel="alternate"></link><published>2016-12-22T00:00:00+08:00</published><updated>2016-12-22T00:00:00+08:00</updated><author><name>40443111</name></author><id>tag:,2016-12-22:./20161222di-shi-wu-zhou.html</id><summary type="html">&lt;p&gt;&lt;b&gt;&lt;font color="red"&gt;3D印表機完成&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2016Fall CPA 課程網誌 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2017-01-12T00:00:00+08:00</updated><entry><title>電腦輔助設計課程總結</title><link href="./dian-nao-fu-zhu-she-ji-ke-cheng-zong-jie.html" rel="alternate"></link><published>2017-01-12T00:00:00+08:00</published><updated>2017-01-12T00:00:00+08:00</updated><author><name>40443111</name></author><id>tag:,2017-01-12:./dian-nao-fu-zhu-she-ji-ke-cheng-zong-jie.html</id><summary type="html">&lt;p&gt;&lt;b&gt;&lt;font color="red"&gt;課程總整理&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;
+
+
+&lt;h3&gt;畫圖影片&lt;/h3&gt;
+&lt;h2&gt;https://www.youtube.com/watch?v=wt2DI8KbQkg&amp;amp;t=1s&lt;/h2&gt;
+&lt;h2&gt;https://www.youtube.com/watch?v=5hWd00Pt2IA&amp;amp;t=8s&lt;/h2&gt;
+&lt;h2&gt;https://www.youtube.com/watch?v=FEyLQj3doek&amp;amp;t=5s&lt;/h2&gt;
+&lt;h2&gt;https://www.youtube.com/watch?v=uiPJ2qLA-5E&amp;amp;t=2s&lt;/h2&gt;
+&lt;h2&gt;https://www.youtube.com/watch?v=AlW5g4IcrYc&amp;amp;t=6s&lt;/h2&gt;
+&lt;h2&gt;https://www.youtube.com/watch?v=1Kg6npJqyFg&amp;amp;t=14s&lt;/h2&gt;
+&lt;p&gt;&lt;p&gt;&lt;iframe src="https://player.vimeo.com/video/187119478" width="640" height="342" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt; &lt;p&gt;&lt;a href="https://vimeo.com/187119478"&gt;40443111設計二甲吳承遠 &lt;/a&gt; from &lt;a href="https://vimeo.com/user57531410"&gt;40443111&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;iframe width="854" height="480" src="https://www.youtube.com/watch?v=wt2DI8KbQkg&amp;t=1s" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;iframe width="854" height="480" src="https://www.youtube.com/watch?v=5hWd00Pt2IA&amp;t=8s" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe width="854" height="480" src="https://www.youtube.com/watch?v=FEyLQj3doek&amp;t=5s" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe width="854" height="480" src="https://www.youtube.com/watch?v=uiPJ2qLA-5E&amp;t=2s" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe width="854" height="480" src="https://www.youtube.com/watch?v=AlW5g4IcrYc&amp;t=6s" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe width="854" height="480" src="https://www.youtube.com/watch?v=1Kg6npJqyFg&amp;t=14s" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="./../data/40443111.png"width="800"/&gt;
+&lt;img src="./../data/solvespace40443111.png"width="800"/&gt;&lt;/p&gt;
+&lt;p&gt;Python3 平面四連桿機構模擬:&lt;/p&gt;
+&lt;p&gt;Ubuntu 安裝 matplotlib:&lt;/p&gt;
+&lt;p&gt;sudo apt-get install python3-matplotlib&lt;/p&gt;
+&lt;pre class="brush: python"&gt;
+import math
+import time&lt;/p&gt;
+&lt;h1&gt;利用 matplotlib 程式庫畫出 contour 輪廓&lt;/h1&gt;
+&lt;p&gt;import matplotlib.pyplot as plt&lt;/p&gt;
+&lt;p&gt;class Coord(object):
+    def &lt;strong&gt;init&lt;/strong&gt;(self,x,y):
+        self.x = x
+        self.y = y&lt;/p&gt;
+&lt;table class="codehilitetable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt; 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;def __sub__(self,other):
+    # This allows you to substract vectors
+    return Coord(self.x-other.x,self.y-other.y)
+
+def __repr__(self):
+    # Used to get human readable coordinates when printing
+    return &amp;quot;Coord(%f,%f)&amp;quot;%(self.x,self.y)
+
+def length(self):
+    # Returns the length of the vector
+    return math.sqrt(self.x**2 + self.y**2)
+
+def angle(self):
+    # Returns the vector&amp;#39;s angle
+    return math.atan2(self.y,self.x)
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;def normalize(coord):
+    return Coord(
+        coord.x/coord.length(),
+        coord.y/coord.length()
+        )&lt;/p&gt;
+&lt;p&gt;def perpendicular(coord):
+    # Shifts the angle by pi/2 and calculate the coordinates
+    # using the original vector length
+    return Coord(
+        coord.length()&lt;em&gt;math.cos(coord.angle()+math.pi/2),
+        coord.length()&lt;/em&gt;math.sin(coord.angle()+math.pi/2)
+        )&lt;/p&gt;
+&lt;h1&gt;點類別&lt;/h1&gt;
+&lt;p&gt;class Point(object):
+    # 起始方法
+    def &lt;strong&gt;init&lt;/strong&gt;(self, x, y):
+        self.x = x
+        self.y = y&lt;/p&gt;
+&lt;table class="codehilitetable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt; 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# 加入 Eq 方法
+def Eq(self, pt):
+    self.x = pt.x
+    self.y = pt.y
+
+# 加入 setPoint 方法
+def setPoint(self, px, py):
+    self.x = px
+    self.y = py
+
+# 加上 distance(pt) 方法, 計算點到 pt 的距離
+def distance(self, pt):
+    self.pt = pt
+    x = self.x - self.pt.x
+    y = self.y - self.pt.y
+    return math.sqrt(x * x + y * y)
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;h1&gt;Line 類別物件&lt;/h1&gt;
+&lt;p&gt;class Line(object):&lt;/p&gt;
+&lt;table class="codehilitetable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt; 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# 起始方法
+def __init__(self, p1, p2):
+    self.p1 = p1
+    self.p2 = p2
+    # 直線的第一點, 設為線尾
+    self.Tail = self.p1
+    # 直線組成的第二點, 設為線頭
+    self.Head = self.p2
+    # 直線的長度屬性
+    self.length = math.sqrt(math.pow(self.p2.x-self.p1.x, 2)+math.pow(self.p2.y-self.p1.y,2))
+
+# setPP 以指定頭尾座標點來定義直線
+def setPP(self, p1, p2):
+    self.p1 = p1
+    self.p2 = p2
+    self.Tail = self.p1
+    self.Head = self.p2
+    self.length = math.sqrt(math.pow(self.p2.x-self.p1.x, 2)+math.pow(self.p2.y-self.p1.y,2))
+
+# setRT 方法 for Line, 應該已經確定 Tail 點, 然後以 r, t 作為設定 Head 的參考
+def setRT(self, r, t):
+    self.r = r
+    self.t = t
+    x = self.r * math.cos(self.t)
+    y = self.r * math.sin(self.t)
+    self.Tail.Eq(self.p1)
+    self.Head.setPoint(self.Tail.x + x,self.Tail.y + y)
+
+# getR 方法 for Line
+def getR(self):
+    # x 分量與 y 分量
+    x = self.p1.x - self.p2.x
+    y = self.p1.y - self.p2.y
+    return math.sqrt(x * x + y * y)
+
+# 根據定義 atan2(y,x), 表示 (x,y) 與 正 x 軸之間的夾角, 介於 pi 與 -pi 間
+def getT(self):
+    x = self.p2.x - self.p1.x
+    y = self.p2.y - self.p1.y
+    if (math.fabs(x) &amp;lt; math.pow(10,-100)):
+        if(y &amp;lt; 0.0):
+            return (-math.pi/2)
+        else:
+            return (math.pi/2)
+    else:
+        return math.atan2(y, x)
+
+# setTail 方法 for Line
+def setTail(self, pt):
+    self.pt = pt
+    self.Tail.Eq(pt)
+    self.Head.setPoint(self.pt.x + self.x, self.pt.y + self.y)
+
+# getHead 方法 for Line
+def getHead(self):
+    return self.Head
+
+def getTail(self):
+    return self.Tail
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;class Link(Line):
+    def &lt;strong&gt;init&lt;/strong&gt;(self, p1, p2):
+        self.p1 = p1
+        self.p2 = p2
+        self.length = math.sqrt(math.pow((self.p2.x - self.p1.x), 2) + math.pow((self.p2.y - self.p1.y), 2))&lt;/p&gt;
+&lt;p&gt;class Triangle(object):
+    def &lt;strong&gt;init&lt;/strong&gt;(self, p1, p2, p3):
+        self.p1 = p1
+        self.p2 = p2
+        self.p3 = p3&lt;/p&gt;
+&lt;table class="codehilitetable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48
+ 49
+ 50
+ 51
+ 52
+ 53
+ 54
+ 55
+ 56
+ 57
+ 58
+ 59
+ 60
+ 61
+ 62
+ 63
+ 64
+ 65
+ 66
+ 67
+ 68
+ 69
+ 70
+ 71
+ 72
+ 73
+ 74
+ 75
+ 76
+ 77
+ 78
+ 79
+ 80
+ 81
+ 82
+ 83
+ 84
+ 85
+ 86
+ 87
+ 88
+ 89
+ 90
+ 91
+ 92
+ 93
+ 94
+ 95
+ 96
+ 97
+ 98
+ 99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;def getLenp3(self):
+    p1 = self.p1
+    ret = p1.distance(self.p2)
+    return ret
+
+def getLenp1(self):
+    p2 = self.p2
+    ret = p2.distance(self.p3)
+    return ret
+
+def getLenp2(self):
+    p1 = self.p1
+    ret = p1.distance(self.p3)
+    return ret
+
+# 角度
+def getAp1(self):
+    ret = math.acos(((self.getLenp2() * self.getLenp2() + self.getLenp3() * self.getLenp3()) - self.getLenp1() * self.getLenp1()) / (2* self.getLenp2() * self.getLenp3()))
+    return ret
+
+def getAp2(self):
+    ret =math.acos(((self.getLenp1() * self.getLenp1() + self.getLenp3() * self.getLenp3()) - self.getLenp2() * self.getLenp2()) / (2* self.getLenp1() * self.getLenp3()))
+    return ret
+
+def getAp3(self):
+    ret = math.acos(((self.getLenp1() * self.getLenp1() + self.getLenp2() * self.getLenp2()) - self.getLenp3() * self.getLenp3()) / (2* self.getLenp1() * self.getLenp2()))
+    return ret
+
+# ends Triangle def
+# 透過三個邊長定義三角形
+def setSSS(self, lenp3, lenp1, lenp2):
+    self.lenp3 = lenp3
+    self.lenp1 = lenp1
+    self.lenp2 = lenp2
+    self.ap1 = math.acos(((self.lenp2 * self.lenp2 + self.lenp3 * self.lenp3) - self.lenp1 * self.lenp1) / (2* self.lenp2 * self.lenp3))
+    self.ap2 = math.acos(((self.lenp1 * self.lenp1 + self.lenp3 * self.lenp3) - self.lenp2 * self.lenp2) / (2* self.lenp1 * self.lenp3))
+    self.ap3 = math.acos(((self.lenp1 * self.lenp1 + self.lenp2 * self.lenp2) - self.lenp3 * self.lenp3) / (2* self.lenp1 * self.lenp2))
+
+# 透過兩個邊長與夾角定義三角形
+def setSAS(self, lenp3, ap2, lenp1):
+    self.lenp3 = lenp3
+    self.ap2 = ap2
+    self.lenp1 = lenp1
+    self.lenp2 = math.sqrt((self.lenp3 * self.lenp3 + self.lenp1 * self.lenp1) - 2* self.lenp3 * self.lenp1 * math.cos(self.ap2))
+    #等於 SSS(AB, BC, CA)
+
+def setSaSS(self, lenp2, lenp3, lenp1):
+    self.lenp2 = lenp2
+    self.lenp3 = lenp3
+    self.lenp1 = lenp1
+    if(self.lenp1 &amp;gt; (self.lenp2 + self.lenp3)):
+    #CAB 夾角為 180 度, 三點共線且 A 介於 BC 之間
+        ret = math.pi
+    else :
+        # CAB 夾角為 0, 三點共線且 A 不在 BC 之間
+        if((self.lenp1 &amp;lt; (self.lenp2 - self.lenp3)) or (self.lenp1 &amp;lt; (self.lenp3 - self.lenp2))):
+            ret = 0.0
+        else :
+        # 透過餘絃定理求出夾角 CAB 
+            ret = math.acos(((self.lenp2 * self.lenp2 + self.lenp3 * self.lenp3) - self.lenp1 * self.lenp1) / (2 * self.lenp2 * self.lenp3))
+    return ret
+
+# 取得三角形的三個邊長值
+def getSSS(self):
+    temp = []
+    temp.append( self.getLenp1() )
+    temp.append( self.getLenp2() )
+    temp.append( self.getLenp3() )
+    return temp
+
+# 取得三角形的三個角度值
+def getAAA(self):
+    temp = []
+    temp.append( self.getAp1() )
+    temp.append( self.getAp2() )
+    temp.append( self.getAp3() )
+    return temp
+
+# 取得三角形的三個角度與三個邊長
+def getASASAS(self):
+    temp = []
+    temp.append(self.getAp1())
+    temp.append(self.getLenp1())
+    temp.append(self.getAp2())
+    temp.append(self.getLenp2())
+    temp.append(self.getAp3())
+    temp.append(self.getLenp3())
+    return temp
+
+#2P 2L return mid P
+def setPPSS(self, p1, p3, lenp1, lenp3):
+    temp = []
+    self.p1 = p1
+    self.p3 = p3
+    self.lenp1 = lenp1
+    self.lenp3 = lenp3
+
+    #bp3 is the angle beside p3 point, cp3 is the angle for line23, p2 is the output
+    line31 = Line(p3, p1)
+    self.lenp2 = line31.getR()
+    #self.lenp2 = self.p3.distance(self.p1)
+    #這裡是求角3
+    ap3 = math.acos(((self.lenp1 * self.lenp1 + self.lenp2 * self.lenp2) - self.lenp3 * self.lenp3) / (2 * self.lenp1 * self.lenp2))
+    #ap3 = math.acos(((self.lenp1 * self.lenp1 + self.lenp3 * self.lenp3) - self.lenp2 * self.lenp2) / (2 * self.lenp1 * self.lenp3))
+    bp3 = line31.getT()
+    cp3 = bp3 - ap3
+    temp.append(p3.x + self.lenp1*math.cos(cp3))#p2.x
+    temp.append(p3.y + self.lenp1*math.sin(cp3))#p2.y
+    return temp
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;h1&gt;以上為相關函式物件的定義區&lt;/h1&gt;
+&lt;h1&gt;全域變數&lt;/h1&gt;
+&lt;p&gt;midpt = Point(0, 0)
+tippt = Point(0, 0)
+contour = []&lt;/p&gt;
+&lt;h1&gt;幾何位置輸入變數&lt;/h1&gt;
+&lt;p&gt;x=10
+y=10
+r=10&lt;/p&gt;
+&lt;h1&gt;其他輸入變數&lt;/h1&gt;
+&lt;p&gt;theta = 0
+degree = math.pi/180.0
+dx = 2
+dy = 4&lt;/p&gt;
+&lt;h1&gt;set p1.p2.p3.p4 position&lt;/h1&gt;
+&lt;p&gt;p1 =  Point(150,100)
+p2 =  Point(150,200)
+p3 =  Point(300,300)
+p4 =  Point(350,100)&lt;/p&gt;
+&lt;h1&gt;create links&lt;/h1&gt;
+&lt;p&gt;line1 =  Link(p1,p2)
+line2 =  Link(p2,p3)
+line3 =  Link(p3,p4)
+line4 =  Link(p1,p4)
+line5 =  Link(p2,p4)&lt;/p&gt;
+&lt;p&gt;link2_len = p2.distance(p3)
+link3_len = p3.distance(p4)&lt;/p&gt;
+&lt;p&gt;triangle1 =  Triangle(p1,p2,p4)
+triangle2 =  Triangle(p2,p3,p4)&lt;/p&gt;
+&lt;p&gt;def simulate():
+    global theta, midpt, oldpt
+    theta += dx
+    p2.x = p1.x + line1.length&lt;em&gt;math.cos(theta&lt;/em&gt;degree)
+    p2.y = p1.y - line1.length&lt;em&gt;math.sin(theta&lt;/em&gt;degree)
+    p3.x, p3.y = triangle2.setPPSS(p2,p4,link2_len,link3_len)
+    # 計算垂直單位向量
+    a = Coord(p3.x, p3.y)
+    b = Coord(p2.x, p2.y)
+    normal = perpendicular(normalize(a-b))
+    midpt.x = (p2.x + p3.x)/2
+    midpt.y = (p2.y + p3.y)/2
+    tippt.x = midpt.x + 150&lt;em&gt;normal.x
+    tippt.y = midpt.y + 150&lt;/em&gt;normal.y
+    # 印出座標點
+    #print(round(tippt.x, 2), round(tippt.y, 2))
+    if theta &amp;lt; 360:
+        contour.append((round(tippt.x, 2), round(tippt.y, 2)))&lt;/p&gt;
+&lt;p&gt;for i in range(180):
+    simulate()&lt;/p&gt;
+&lt;h1&gt;印出 contour&lt;/h1&gt;
+&lt;h1&gt;print(contour)&lt;/h1&gt;
+&lt;p&gt;x_list = [x for (x, y) in contour]
+y_list = [y for (x, y) in contour]&lt;/p&gt;
+&lt;p&gt;plt.xlabel('x coordinate')
+plt.ylabel('y coordinate')&lt;/p&gt;
+&lt;p&gt;plt.plot(x_list, y_list)
+plt.show()
+&lt;/pre&gt;&lt;/p&gt;
+&lt;h2&gt;Solvespace&lt;/h2&gt;
+&lt;h3&gt;1. Parts (零件繪製)&lt;/h3&gt;
+&lt;p&gt;範例檔案: &lt;a href="http://solvespace.com/bracket.pl"&gt;http://solvespace.com/bracket.pl&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;An introductory tutorial is available, in which we draw the same part that is shown in the demo video. &lt;/p&gt;
+&lt;p&gt;This covers most of the basic features of SolveSpace, including sketches, constraints, extrusions, and Boolean operations.&lt;/p&gt;
+&lt;p&gt;When we first run SolveSpace, we will begin with an empty part. Initially, our view of the part will be oriented onto the XY plane; the label for that plane is displayed at the bottom left of the screen (#XY, in dark grey). The axes are also indicated by the three colored arrows at the bottom left; the X, Y, and Z axes are drawn in red, green, and blue respectively.&lt;/p&gt;
+&lt;p&gt;When we hover the mouse over any entity, constraint, or other object in the sketch, that object will appear highlighted in yellow. For example, the XY plane, which is drawn as a dashed square, will appear highlighted when we hover the mouse over it. The YZ and ZX planes initially look like dashed lines, because they are being viewed on edge; but they still appear highlighted in yellow when we hold the mouse over them. It is similarly possible to highlight the X, Y, and Z axes (which are drawn as arrows), or the origin (which like all points is drawn as a green square).&lt;/p&gt;
+&lt;h4&gt;Extrude (平行長出或除料)&lt;/h4&gt;
+&lt;h4&gt;Lathe (旋轉繞行長出或除料)&lt;/h4&gt;
+&lt;h4&gt;Export Triangle Mesh&lt;/h4&gt;
+&lt;p&gt;STL 格式&lt;/p&gt;
+&lt;p&gt;將零件檔案轉出 STL 格式後 (binary or ASCII format definitions), 進入倉儲後, 利用 &lt;a href="https://help.github.com/articles/3d-file-viewer/"&gt;Github 內建的 stl viewer 功能&lt;/a&gt;展示.&lt;/p&gt;
+&lt;p&gt;three.js&lt;/p&gt;
+&lt;iframe src="./../w7/40443111.html" width="800" height="600"&gt;&lt;/iframe&gt;
+
+&lt;h3&gt;2. Assembly (零件組立)&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://solvespace.com/box.pl"&gt;http://solvespace.com/box.pl&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;3. Linkages (fourbar &amp;amp; multilink) (四連桿與多連桿運動模擬)&lt;/h3&gt;
+&lt;p&gt;四連桿:&lt;/p&gt;
+&lt;p&gt;多連桿:  &lt;a href="http://solvespace.com/linkage.pl"&gt;http://solvespace.com/linkage.pl&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;4. Compiled &amp;amp; API (編譯與延伸應用)&lt;/h3&gt;
+&lt;p&gt;使用 Virtualbox 虛擬主機執行 Windows 64 位元與 Ubuntu 64 位元環境中的編譯與延伸應用.&lt;/p&gt;
+&lt;p&gt;Virtualbox Ubuntu 64位元虛擬檔案: &lt;a href="http://140.130.17.17/public/Ubuntu/1604_solvespace_final/Ubuntu_160464.vdi"&gt;http://140.130.17.17/public/Ubuntu/1604_solvespace_final/Ubuntu_160464.vdi&lt;/a&gt; (只有在區網可以下載).&lt;/p&gt;
+&lt;p&gt;如何用 slovespace 繪製小方塊&lt;/p&gt;
+&lt;p&gt;以下是我畫的零件&lt;/p&gt;
+&lt;h3&gt;支架&lt;/h3&gt;
+&lt;p&gt;&lt;iframe src="./../w14/stent.html" width="800" height="600"&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="./../w14/stent.slvs"&gt;按右鍵存檔即可&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;固定塊&lt;/h3&gt;
+&lt;p&gt;&lt;iframe src="./../w14/block.html" width="800" height="600"&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="./../w14/block.slvs"&gt;按右鍵存檔即可&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;本體&lt;/h3&gt;
+&lt;p&gt;&lt;iframe src="./../w14/body.html" width="800" height="600"&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="./../w14/body.slvs"&gt;按右鍵存檔即可&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;支架&lt;/h3&gt;
+&lt;p&gt;&lt;iframe src="./../w14/stent.html" width="800" height="600"&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="./../w14/stent.slvs"&gt;按右鍵存檔即可&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;3D印表機零件&lt;/h2&gt;
+&lt;h2&gt;支柱&lt;/h2&gt;
+&lt;p&gt;&lt;iframe src="./../w15/pillar.html" width="800" height="600"&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;h2&gt;連接桿&lt;/h2&gt;
+&lt;p&gt;&lt;iframe src="./../w15/rod.html" width="800" height="600"&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;h2&gt;底盤&lt;/h2&gt;
+&lt;p&gt;&lt;iframe src="./../w15/chassis.html" width="800" height="600"&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;h2&gt;圓盤&lt;/h2&gt;
+&lt;p&gt;&lt;iframe src="./../w15/disc.html" width="800" height="600"&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;h2&gt;本體&lt;/h2&gt;
+&lt;p&gt;&lt;iframe src="./../w15/finish.html" width="800" height="600"&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;h3&gt;固定塊&lt;/h3&gt;
+&lt;p&gt;&lt;iframe src="./../w14/block.html" width="800" height="600"&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;/pre&gt;</summary><category term="week18"></category></entry><entry><title>2016.12.22第十五週</title><link href="./20161222di-shi-wu-zhou.html" rel="alternate"></link><published>2016-12-22T00:00:00+08:00</published><updated>2016-12-22T00:00:00+08:00</updated><author><name>40443111</name></author><id>tag:,2016-12-22:./20161222di-shi-wu-zhou.html</id><summary type="html">&lt;p&gt;&lt;b&gt;&lt;font color="red"&gt;3D印表機完成&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;
 
 
 &lt;h3&gt;3D印表機零件&lt;/h3&gt;
@@ -58,7 +638,10 @@
 &lt;p&gt;多連桿:  &lt;a href="http://solvespace.com/linkage.pl"&gt;http://solvespace.com/linkage.pl&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;4. Compiled &amp;amp; API (編譯與延伸應用)&lt;/h3&gt;
 &lt;p&gt;使用 Virtualbox 虛擬主機執行 Windows 64 位元與 Ubuntu 64 位元環境中的編譯與延伸應用.&lt;/p&gt;
-&lt;p&gt;Virtualbox Ubuntu 64位元虛擬檔案: &lt;a href="http://140.130.17.17/public/Ubuntu/1604_solvespace_final/Ubuntu_160464.vdi"&gt;http://140.130.17.17/public/Ubuntu/1604_solvespace_final/Ubuntu_160464.vdi&lt;/a&gt; (只有在區網可以下載)&lt;/p&gt;</summary><category term="week11"></category></entry><entry><title>2016-11-17第十週</title><link href="./2016-11-17di-shi-zhou.html" rel="alternate"></link><published>2016-11-17T12:00:00+08:00</published><updated>2016-11-17T12:00:00+08:00</updated><author><name>40443111</name></author><id>tag:,2016-11-17:./2016-11-17di-shi-zhou.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;p&gt;Virtualbox Ubuntu 64位元虛擬檔案: &lt;a href="http://140.130.17.17/public/Ubuntu/1604_solvespace_final/Ubuntu_160464.vdi"&gt;http://140.130.17.17/public/Ubuntu/1604_solvespace_final/Ubuntu_160464.vdi&lt;/a&gt; (只有在區網可以下載).&lt;/p&gt;</summary><category term="week11"></category></entry><entry><title>1117</title><link href="./1117.html" rel="alternate"></link><published>2016-11-17T12:00:00+08:00</published><updated>2016-11-17T12:00:00+08:00</updated><author><name>40443111</name></author><id>tag:,2016-11-17:./1117.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;p&gt;&lt;img src="./../data/40443111.png"width="800"/&gt;
+&lt;img src="./../data/solvespace40443111.png"width="800"/&gt;&lt;/p&gt;</summary><category term="daily"></category></entry><entry><title>2016-11-17第十週</title><link href="./2016-11-17di-shi-zhou.html" rel="alternate"></link><published>2016-11-17T12:00:00+08:00</published><updated>2016-11-17T12:00:00+08:00</updated><author><name>40443111</name></author><id>tag:,2016-11-17:./2016-11-17di-shi-zhou.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;p&gt;&lt;img src="./../data/40443111.png"width="800"/&gt;
 &lt;img src="./../data/solvespace40443111.png"width="800"/&gt;&lt;/p&gt;
