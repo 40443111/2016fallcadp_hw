@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2016Fall CPA 課程網誌 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2017-01-12T00:00:00+08:00</updated><entry><title>2017.01.12電腦輔助設計課程總結</title><link href="./20170112dian-nao-fu-zhu-she-ji-ke-cheng-zong-jie.html" rel="alternate"></link><published>2017-01-12T00:00:00+08:00</published><updated>2017-01-12T00:00:00+08:00</updated><author><name>40443111</name></author><id>tag:,2017-01-12:./20170112dian-nao-fu-zhu-she-ji-ke-cheng-zong-jie.html</id><summary type="html">&lt;p&gt;&lt;b&gt;&lt;font color="red"&gt;課程總整理&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2016Fall CPA 課程網誌 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2017-04-20T12:08:00+08:00</updated><entry><title>協同產品設計實習 期中協同查驗與自評</title><link href="./xie-tong-chan-pin-she-ji-shi-xi-qi-zhong-xie-tong-cha-yan-yu-zi-ping.html" rel="alternate"></link><published>2017-04-20T12:08:00+08:00</published><updated>2017-04-20T12:08:00+08:00</updated><author><name>40443111</name></author><id>tag:,2017-04-20:./xie-tong-chan-pin-she-ji-shi-xi-qi-zhong-xie-tong-cha-yan-yu-zi-ping.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;p&gt;(二) 四連桿機構協同 Trace Point 查驗&lt;p&gt;
+
+&lt;p&gt;四連趕機構製作影片&lt;p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/zMM4sesDVzE?ecver=1" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;a href="http://imgur.com/6lEjdrv"&gt;&lt;img src="http://i.imgur.com/6lEjdrv.png" title="source: imgur.com" /&gt;&lt;/a&gt;
+
+&lt;a href="http://imgur.com/j1I1H2W"&gt;&lt;img src="http://i.imgur.com/j1I1H2W.png" title="source: imgur.com" /&gt;&lt;/a&gt;</summary><category term="HW"></category></entry><entry><title>2017.01.12電腦輔助設計課程總結</title><link href="./20170112dian-nao-fu-zhu-she-ji-ke-cheng-zong-jie.html" rel="alternate"></link><published>2017-01-12T00:00:00+08:00</published><updated>2017-01-12T00:00:00+08:00</updated><author><name>40443111</name></author><id>tag:,2017-01-12:./20170112dian-nao-fu-zhu-she-ji-ke-cheng-zong-jie.html</id><summary type="html">&lt;p&gt;&lt;b&gt;&lt;font color="red"&gt;課程總整理&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;
 
 
 &lt;h3&gt;畫圖影片&lt;/h3&gt;
@@ -602,32 +612,7 @@ plt.show()
 &lt;p&gt;&lt;a href="./../w14/stent.slvs"&gt;按右鍵存檔即可&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;固定塊&lt;/h3&gt;
 &lt;p&gt;&lt;iframe src="./../w14/block.html" width="800" height="600"&gt;&lt;/iframe&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="./../w14/block.slvs"&gt;按右鍵存檔即可&lt;/a&gt;&lt;/p&gt;</summary><category term="week12"></category></entry><entry><title>2016.11.24第十一週</title><link href="./20161124di-shi-yi-zhou.html" rel="alternate"></link><published>2016-11-24T00:00:00+08:00</published><updated>2016-11-24T00:00:00+08:00</updated><author><name>40443111</name></author><id>tag:,2016-11-24:./20161124di-shi-yi-zhou.html</id><summary type="html">&lt;p&gt;&lt;b&gt;&lt;font color="red"&gt; 2016Fall Solvespace 教學&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;
-
-
-&lt;h2&gt;Solvespace&lt;/h2&gt;
-&lt;h3&gt;1. Parts (零件繪製)&lt;/h3&gt;
-&lt;p&gt;範例檔案: &lt;a href="http://solvespace.com/bracket.pl"&gt;http://solvespace.com/bracket.pl&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;An introductory tutorial is available, in which we draw the same part that is shown in the demo video. &lt;/p&gt;
-&lt;p&gt;This covers most of the basic features of SolveSpace, including sketches, constraints, extrusions, and Boolean operations.&lt;/p&gt;
-&lt;p&gt;When we first run SolveSpace, we will begin with an empty part. Initially, our view of the part will be oriented onto the XY plane; the label for that plane is displayed at the bottom left of the screen (#XY, in dark grey). The axes are also indicated by the three colored arrows at the bottom left; the X, Y, and Z axes are drawn in red, green, and blue respectively.&lt;/p&gt;
-&lt;p&gt;When we hover the mouse over any entity, constraint, or other object in the sketch, that object will appear highlighted in yellow. For example, the XY plane, which is drawn as a dashed square, will appear highlighted when we hover the mouse over it. The YZ and ZX planes initially look like dashed lines, because they are being viewed on edge; but they still appear highlighted in yellow when we hold the mouse over them. It is similarly possible to highlight the X, Y, and Z axes (which are drawn as arrows), or the origin (which like all points is drawn as a green square).&lt;/p&gt;
-&lt;h4&gt;Extrude (平行長出或除料)&lt;/h4&gt;
-&lt;h4&gt;Lathe (旋轉繞行長出或除料)&lt;/h4&gt;
-&lt;h4&gt;Export Triangle Mesh&lt;/h4&gt;
-&lt;p&gt;STL 格式&lt;/p&gt;
-&lt;p&gt;將零件檔案轉出 STL 格式後 (binary or ASCII format definitions), 進入倉儲後, 利用 &lt;a href="https://help.github.com/articles/3d-file-viewer/"&gt;Github 內建的 stl viewer 功能&lt;/a&gt;展示.&lt;/p&gt;
-&lt;p&gt;three.js&lt;/p&gt;
-&lt;iframe src="./../w7/40443111.html" width="800" height="600"&gt;&lt;/iframe&gt;
-
-&lt;h3&gt;2. Assembly (零件組立)&lt;/h3&gt;
-&lt;p&gt;&lt;a href="http://solvespace.com/box.pl"&gt;http://solvespace.com/box.pl&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;3. Linkages (fourbar &amp;amp; multilink) (四連桿與多連桿運動模擬)&lt;/h3&gt;
-&lt;p&gt;四連桿:&lt;/p&gt;
-&lt;p&gt;多連桿:  &lt;a href="http://solvespace.com/linkage.pl"&gt;http://solvespace.com/linkage.pl&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;4. Compiled &amp;amp; API (編譯與延伸應用)&lt;/h3&gt;
-&lt;p&gt;使用 Virtualbox 虛擬主機執行 Windows 64 位元與 Ubuntu 64 位元環境中的編譯與延伸應用.&lt;/p&gt;
-&lt;p&gt;Virtualbox Ubuntu 64位元虛擬檔案: &lt;a href="http://140.130.17.17/public/Ubuntu/1604_solvespace_final/Ubuntu_160464.vdi"&gt;http://140.130.17.17/public/Ubuntu/1604_solvespace_final/Ubuntu_160464.vdi&lt;/a&gt; (只有在區網可以下載).&lt;/p&gt;</summary><category term="week11"></category></entry><entry><title>1117</title><link href="./1117.html" rel="alternate"></link><published>2016-11-17T12:00:00+08:00</published><updated>2016-11-17T12:00:00+08:00</updated><author><name>40443111</name></author><id>tag:,2016-11-17:./1117.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;p&gt;&lt;a href="./../w14/block.slvs"&gt;按右鍵存檔即可&lt;/a&gt;&lt;/p&gt;</summary><category term="week12"></category></entry><entry><title>1117</title><link href="./1117.html" rel="alternate"></link><published>2016-11-17T12:00:00+08:00</published><updated>2016-11-17T12:00:00+08:00</updated><author><name>40443111</name></author><id>tag:,2016-11-17:./1117.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;p&gt;&lt;img src="./../data/40443111.png"width="800"/&gt;
 &lt;img src="./../data/solvespace40443111.png"width="800"/&gt;&lt;/p&gt;</summary><category term="daily"></category></entry><entry><title>2016-11-17第十週</title><link href="./2016-11-17di-shi-zhou.html" rel="alternate"></link><published>2016-11-17T12:00:00+08:00</published><updated>2016-11-17T12:00:00+08:00</updated><author><name>40443111</name></author><id>tag:,2016-11-17:./2016-11-17di-shi-zhou.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
